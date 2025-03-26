@@ -46,7 +46,7 @@ namespace asmdom {
     isElementOrFragment = isElement | isFragment,
     nodeType = isElement | isText | isComment | isFragment,
     removeNodeType = ~0 ^ nodeType,
-    extractSel = ~0 << 13,
+    extractSel = ~0u << 13,
     id = extractSel | hasKey | nodeType
   };
 
